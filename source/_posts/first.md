@@ -4,7 +4,7 @@ date: 2018-07-10 14:26:06
 tags: [hello,hexo,first]
 ---
 
-Welcome to my blog(http://ah-well.github)
+Welcome to my blog(https://ah-well.github.io)
 
 <!-- Welcome to [Well's Blog](https://ah-well.github.io/)! This is my very first post. -->
 

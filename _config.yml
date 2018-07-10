@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Well of Blog
+title: Well's Blog
 subtitle: Everything from Everywhere
 description: to be continue
 keywords: blog well
@@ -79,7 +79,8 @@ theme: indigo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com/ah-well
+  repository: https://github.com/ah-well/ah-well.github.io
+  branch: master
 
 # hexo-admin authentification
 admin:
