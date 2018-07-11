@@ -82,8 +82,30 @@ deploy:
   repository: https://github.com/ah-well/ah-well.github.io
   branch: master
 
-# hexo-admin authentification
+# hexo-admin authentification 可视化后台管理
 admin:
   username: well
   password_hash: $2a$10$2AxBD83p.M51s4G5KdCEmOM4UoexR2.9eIBcFntMCIIkP9tZTp1X6
   secret: 9468724255bc
+
+# Security  加密文章
+##
+encrypt:
+    enable: true
+    default_abstract: the content has been encrypted, enter the password to read.</br>
+    default_message: Please enter the password to read.
+    default_template:
+                    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+                    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+                    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+                    <div id="security">
+                      <div class="input-group"> 
+                        <input type="text" class="form-control" aria-label="Enter the password." id="pass">
+                        <div class="input-group-btn"> 
+                          <button type="button" class="btn btn-default" onclick="decryptAES()">解密</button> 
+                        </div> 
+                      </div> 
+                    </div> 
+                    <div id="encrypt-blog" style="display:none">
+                        {{content}}
+                    </div>
