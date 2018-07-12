@@ -1,8 +1,4 @@
 ---
-title: 404
-date: 2018-07-10 10:01:47
-type: "404"
-layout: "404"
+layout: false    
+title: "My Blog Name | 404"
 ---
-
-### 找不到

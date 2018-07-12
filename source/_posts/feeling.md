@@ -1,11 +1,10 @@
 title: bad feelings
 date: 2018-07-10 15:18:27
-tags: [js,html]
-categories: 续写回忆
-password: well
-abstract: Welcome to my blog, enter password to read.
-message: Welcome to my blog, enter password to read.
+tags: [回忆,毒鸡汤]
+categories: 负能量
+description: 文章列表描述
 
 ---
 
-#### 在
+#### 大部分都是傻的，你我也不例外
+    - 

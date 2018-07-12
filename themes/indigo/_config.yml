@@ -30,7 +30,7 @@ menu:
   link:
     text: 测试
     url: /custom
-  about:
+  user-astronaut:
     text: 关于
     url: /about
 
@@ -65,7 +65,7 @@ archive_yearly: true
 show_last_updated: true
 
 # 是否开启分享
-share: false
+share: true
 
 # 是否开启打赏，关闭 reward: false
 reward:
@@ -158,8 +158,8 @@ visit_counter:
 
 # 动态定义title
 title_change:
-  normal: 寻者不遇
-  leave: 此地不宜久留
+  normal: 此地不宜久留
+  leave: 寻者不遇
 
 # 设置为 true 发布后将使用 unpkg cdn 最新的主题样式
 # 如果想让你的自定义样式生效，把此项设为 false
