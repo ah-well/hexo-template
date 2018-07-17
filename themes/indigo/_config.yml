@@ -47,11 +47,11 @@ favicon: /img/favicon-1.ico
 email: 990269246@qq.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
-color: '#bl'
+color: false
 
 # 页面标题
 tags_title: 标签
-archives_title: 档案
+archives_title: 归档
 categories_title: 目录
 
 # 文章截断
@@ -69,7 +69,7 @@ share: true
 
 # 是否开启打赏，关闭 reward: false
 reward:
-  title: 谢谢~
+  title: 请我喝点什么吧~
   wechat: /img/wechat.jpg     #微信，关闭设为 false
   alipay: /img/alipay.jpg     #支付宝，关闭设为 false
 
