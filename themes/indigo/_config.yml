@@ -10,7 +10,7 @@
 
 menu:
   home:
-    text: 主页
+    text: 首页
     url: /
   archives:
     text: 档案
@@ -23,7 +23,7 @@ menu:
     url: /categories
   github:
     url: https://github.com/ah-well
-    target: _blank
+    target: _blank·
   weibo:
     url: http://www.weibo.com/99026well
     target: _blank
@@ -69,7 +69,7 @@ share: true
 
 # 是否开启打赏，关闭 reward: false
 reward:
-  title: 请我喝点什么吧~
+  title: 觉得可以请打赏点什么吧~
   wechat: /img/wechat.jpg     #微信，关闭设为 false
   alipay: /img/alipay.jpg     #支付宝，关闭设为 false
 
@@ -77,7 +77,7 @@ reward:
 search: true
 
 # 是否大屏幕下文章页隐藏导航
-hideMenu: true
+hideMenu: false
 
 # 是否开启toc
 # toc: false
@@ -91,7 +91,7 @@ postMessage: 这里可以写作者留言，标签和 hexo 中所有变量及辅�
 cnzz: false
 
 # 百度统计，如要开启，改为你的 key
-baidu_tongji: false
+baidu_tongji: true
 
 # 腾讯分析，如要开启，输入站点id
 tajs: false
@@ -113,7 +113,7 @@ less:
 # 是否开启 disqus
 disqus_shortname: false
 # 是否开启友言评论, 填写友言用户id
-uyan_uid: true
+uyan_uid: false
 # 是否使用 gitment，https://github.com/imsun/gitment
 gitment: false
 # gitment:
@@ -124,13 +124,13 @@ gitment: false
 
 # Valine Comment system. https://valine.js.org
 valine:
-  enable: false # 如果你想使用valine，请将值设置为 true
-  appId:  # your leancloud appId
-  appKey:  # your leancloud appKey
-  notify: false # Mail notify
+  enable: true # 如果你想使用valine，请将值设置为 true
+  appId: OsPWnU738Jl2JGvkL2dL1Ene-gzGzoHsz # your leancloud appId
+  appKey: UgCnn7IWqiqOAkKIJOWxtPfy # your leancloud appKey
+  notify: true # Mail notify
   verify: false # Verify code
   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
-  placeholder: Just go go # Comment Box placeholder
+  placeholder: 留下你的精彩评论吧 # Comment Box placeholder
   guest_info: nick,mail,link # Comment header info
   pageSize: 10 # comment list page size
 
@@ -158,8 +158,8 @@ visit_counter:
 
 # 动态定义title
 title_change:
-  normal: 此地不宜久留
-  leave: 寻者不遇
+  normal: 梦幻境
+  leave: 你快点肥来
 
 # 设置为 true 发布后将使用 unpkg cdn 最新的主题样式
 # 如果想让你的自定义样式生效，把此项设为 false
@@ -169,4 +169,4 @@ cdn: false
 lightbox: true
 
 # icp备案号  ICP_license: 京ICP备1234556号-1
-ICP_license: 粤ICP备18060719号-1
+ICP_license: false

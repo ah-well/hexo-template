@@ -713,6 +713,11 @@ color-name@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.1.tgz#4b1415304cf50028ea81643643bd82ea05803689"
 
+colors@^1.3.0:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.3.3.tgz#39e005d546afe01e01f9c4ca8fa50f686a01205d"
+  integrity sha512-mmGt/1pZqYRjMxB1axhTo16/snVZ5krrKkcmMeVKxzECMMXoCgnvTPp10QgHfcbQZw8Dq2jMNG6je4JlWU0gWg==
+
 combine-source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/combine-source-map/-/combine-source-map-0.6.1.tgz#9b4a09c316033d768e0f11e029fa2730e079ad96"
@@ -1644,7 +1649,7 @@ hexo-fs@^0.1.3:
     escape-string-regexp "^1.0.5"
     graceful-fs "^4.1.4"
 
-hexo-fs@^0.2.0:
+hexo-fs@^0.2.0, hexo-fs@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/hexo-fs/-/hexo-fs-0.2.3.tgz#c3a81b46e457dfafc56d87c78ef114104f4a3e41"
   dependencies:
@@ -1695,6 +1700,18 @@ hexo-generator-tag@^0.2.0:
   dependencies:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
+
+hexo-helper-live2d@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-helper-live2d/-/hexo-helper-live2d-3.1.0.tgz#de1b4c8de49559c6fc75485c883cfea59dc650d9"
+  integrity sha512-Y926c3o++MQrrQqOcyX3mTCamuHzkUmeX6qc/lRMUSwxEFLowEjjNRlS0CkQAla2Wxs1bo12ftDf5fHDZlBBRA==
+  dependencies:
+    colors "^1.3.0"
+    hexo-fs "^0.2.3"
+    hexo-log "^0.2.0"
+    live2d-widget "^3.0.5"
+    lodash "^4.17.10"
+    path "^0.12.7"
 
 hexo-helper-qrcode@^1.0.2:
   version "1.0.2"
@@ -2241,6 +2258,116 @@ lexical-scope@^1.2.0:
   dependencies:
     astw "^2.0.0"
 
+live2d-widget-model-chitose@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-chitose/-/live2d-widget-model-chitose-1.0.5.tgz#e6aed2d6343e50f316b97967394889583bd407c3"
+  integrity sha512-gUyTulOh9+e9JU/8oxV7GpFLrI/nRiKIl9k2Nu3gLCsPoUk/pvL5GURj5A0tel5vhiY3hjgBSNKOvyisXfUEww==
+
+live2d-widget-model-epsilon2_1@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-epsilon2_1/-/live2d-widget-model-epsilon2_1-1.0.5.tgz#c1501a07bdceb971821f2eee9837d8b593839de5"
+  integrity sha512-OeRK1FoEqzz6gvFpEKmmq1HBrwG6oAJghWf12n6uKoUprN/HclWDGpKFpwKwosRJYrEHkuXsrbmqtvC8R11hOg==
+
+live2d-widget-model-gf@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-gf/-/live2d-widget-model-gf-1.0.5.tgz#38e39ae08e4b1ac1a44961eb59ebdaa8753b111a"
+  integrity sha512-VOSFePEOLqg1Hilzdq/Fvv1Hrukrn5c7JR99t+2FFlZ0P59jSvmzTpdXwGIEcGTg/obB3Iw8vME/etrZoqpCdg==
+
+live2d-widget-model-haru@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-haru/-/live2d-widget-model-haru-1.0.5.tgz#6b51addbb4912df4aaaeaac4da64f1df04ee8f1d"
+  integrity sha512-n895K0BAnN0FJymwADn60WBacWQaqeoFJa5ux6ImEeIE/k+tLRI751B8RiY+zCk/WjdA8oTyuBt5QEhwWghMYw==
+
+live2d-widget-model-haruto@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-haruto/-/live2d-widget-model-haruto-1.0.5.tgz#0a6ae6a93393008246e3f6a30b5b14bb77d2ee55"
+  integrity sha512-zoD6F1c/ryPBV9zQiOj+zRZTYbELNivrK8lM2Sr4DKp/kCzDB+RjJuHjqXEVEMtRc8Q23zKkfrlGyC1OQOFP7g==
+
+live2d-widget-model-hibiki@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-hibiki/-/live2d-widget-model-hibiki-1.0.5.tgz#0ef1d99b43d279fb9531bccaa9acc12dd5069ff5"
+  integrity sha512-MPtmSb0WFRz+gaOAhOyz5xbrpX9wO5utuhqEQwx7rRXIYo/YmQcjLSnMVXWC6tQ7tBQPkAKeQ55RunlnNM3b2A==
+
+live2d-widget-model-hijiki@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-hijiki/-/live2d-widget-model-hijiki-1.0.5.tgz#c2ddc6b2380be11b8b8bc2df0d82fd6dfa007f11"
+  integrity sha512-1htA3VPgqw5mvs94qHVqy56MjmF1huBXst1SsgphNyeWuZT3aH87I0sF1Ene7WDkyEPnMeR+pX1bJxWa524snA==
+
+live2d-widget-model-izumi@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-izumi/-/live2d-widget-model-izumi-1.0.5.tgz#a6f6b12bdc394bfe0dc57e436a9c303dcbe6a997"
+  integrity sha512-BlLnfYPXgo/D5XSszADKGcs2C6MyiNKFY26/kZMZ/OrTNGY85yCBguOcDfKv7ZQFGI1KsEkzzq3Kzqa1fYoUaA==
+
+live2d-widget-model-koharu@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-koharu/-/live2d-widget-model-koharu-1.0.5.tgz#6525e2c495af40b074d91c31499d4a71711cfccc"
+  integrity sha512-tziYYbBvkLFbYmizb6Sij4rF1Vmne9ZJwwD8dljt3QPeWxYBjxuQspzLrFOjMtvCSeE5dncNG7qdnTUb5nD2DQ==
+
+live2d-widget-model-miku@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-miku/-/live2d-widget-model-miku-1.0.5.tgz#49a0b7b4bbc371e36b75cf62d745933e7bcf108b"
+  integrity sha512-uwthpWUAeqiA/tL87QNri1eNp0w0UKxM34n/PhA0ng/ZU4hhsJKYHaRcoPK8oOWbpLYCoS8uzWAACmXfomylTg==
+
+live2d-widget-model-ni-j@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-ni-j/-/live2d-widget-model-ni-j-1.0.5.tgz#cd73bd0a009669d71aa45009deb8fc5f0b8e3b67"
+  integrity sha512-NYI7ItKk6HrsolVsHwBr/693TwQCcp49m3bEo3LoTG5ZFs7x3T+i5aJVUdLXbIRB0sdeUm3RYvsmZfqx9CGRNQ==
+
+live2d-widget-model-nico@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-nico/-/live2d-widget-model-nico-1.0.5.tgz#a4acbe3d9b2b8aa9f9c12a077606b0d27cfdbe20"
+  integrity sha512-zwk5scbdNaFiKNaiOu36pVtCR5q5T/MuQ8ov2SA5SPYvZl8aXdtcu42yiKoFEkKqG2UgfH+x6zSDvMLfu6i3+g==
+
+live2d-widget-model-nietzsche@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-nietzsche/-/live2d-widget-model-nietzsche-1.0.5.tgz#c88a061958971fc68f53eb53c7bd41108af25dca"
+  integrity sha512-mcWzJ0+sQ7VuTTpT+Q5x2d6Zc5iQgGfoRjT/aIMEF/qzoRcsYLYkdDX92wgeuMLVz0b9VRmcweZRSn3VtEHRWA==
+
+live2d-widget-model-nipsilon@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-nipsilon/-/live2d-widget-model-nipsilon-1.0.5.tgz#3805c87c8239306c95f87dcfbcf166e4eca9cfa4"
+  integrity sha512-iPE2AXZhkNZmj94F17dJRFXgsApxIqlPPUQKVlvWxaNH29Ia4fl0xv/s8oRgJFwScJeOPZwnWuByRbrJDfhwcA==
+
+live2d-widget-model-nito@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-nito/-/live2d-widget-model-nito-1.0.5.tgz#29b15498872e8b39ad7ebc6f4e77b491f47b8c9e"
+  integrity sha512-WVFOjM72Pco6Y8nS3UbrAZ942Aj7PiuLC56WYHd43EQ8EzZ261Qu/Edyvs6/4AZFfMO8SZWq73oGs0RCItEa9A==
+
+live2d-widget-model-shizuku@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-shizuku/-/live2d-widget-model-shizuku-1.0.5.tgz#136f269690b20738fa0e9b67e33aa643007512a8"
+  integrity sha512-keEQR1Bm7HILLjNSIpmg1SGuo4H/ZsGRxnBn0l0BxgEbaHlmEE+Jb5nwhAtnh7PN/SRFE3+Ddk/ciy18sT7rAw==
+
+live2d-widget-model-tororo@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-tororo/-/live2d-widget-model-tororo-1.0.5.tgz#f556caff824198ff41d12f7cec807e1301ebc9d1"
+  integrity sha512-qcDZnXyzmNM5NADDAWpknWMCqoip3CZ9bYrKKB0PqusnrUTK0e5k1jAl+RCos9Sbg9g1xzse50vmREwj1LiJ3w==
+
+live2d-widget-model-tsumiki@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-tsumiki/-/live2d-widget-model-tsumiki-1.0.5.tgz#de742cecb460964642f662377dddbadbd3c3feeb"
+  integrity sha512-0rugdU5Fi6XY3wLan6qEvKHKOV7HjdtuP6MEIQSx43oy1E8P/Tx+Nfu8AqVSZ9Y98d6M/nB3WDFHq3Zpjtsvug==
+
+live2d-widget-model-unitychan@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-unitychan/-/live2d-widget-model-unitychan-1.0.5.tgz#fdf0ad303eaca04d42dec05c45a82a24184b7953"
+  integrity sha512-7mkTW/VFYdBqA8vjCpn2x3mZoqcdx35LqSEAVmsr/pDnEOhmm8GFOCNpwYOybvg+oBbB3fXeKdLHtv0q7SU9pA==
+
+live2d-widget-model-wanko@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-wanko/-/live2d-widget-model-wanko-1.0.5.tgz#2833486bc76528ce37e7e04fdbbe623191e03953"
+  integrity sha512-ej3XMEeQ0UPQ1Iz+W0XKOuHEKEE9Vs929APuHKOZO7xJmLIKZzd5cbsoq56z1L7g8DNCVStx6Lb9ZubRAao2jw==
+
+live2d-widget-model-z16@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget-model-z16/-/live2d-widget-model-z16-1.0.5.tgz#7604025e733d6fc6b24a60c3231e5b62d5e532a1"
+  integrity sha512-1CUY6iOWakrJQdShWOJwzYvM0rj0Ok71B5qbKT03/ATPKUYmDLgSIy4QiH9CDZkXSwlQtIEG7CUqqaUzFZTB4w==
+
+live2d-widget@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/live2d-widget/-/live2d-widget-3.0.5.tgz#b6df1d996404adcf31b031a27376f4c223a0db18"
+  integrity sha512-Jvo1QV8gcDTX8zy/hRs0H1pA3ATD9zbG82H2KZcShepICSKh1xY0tTmyla/YvqJtZTmH47l1xq0OG5HvjNbkNg==
+
 lodash.assignin@^4.0.9:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assignin/-/lodash.assignin-4.2.0.tgz#ba8df5fb841eb0a3e8044232b0e263a8dc6a28a2"
@@ -2296,6 +2423,11 @@ lodash.reject@^4.4.0:
 lodash.some@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
+
+lodash@^4.17.10:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
 lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1:
   version "4.17.10"
@@ -2842,6 +2974,14 @@ path-platform@~0.11.15:
   version "0.11.15"
   resolved "https://registry.yarnpkg.com/path-platform/-/path-platform-0.11.15.tgz#e864217f74c36850f0852b78dc7bf7d4a5721bf2"
 
+path@^0.12.7:
+  version "0.12.7"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.12.7.tgz#d4dc2a506c4ce2197eb481ebfcd5b36c0140b10f"
+  integrity sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
+  dependencies:
+    process "^0.11.1"
+    util "^0.10.3"
+
 pause@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
@@ -2890,7 +3030,7 @@ process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
 
-process@~0.11.0:
+process@^0.11.1, process@~0.11.0:
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
 
@@ -3739,7 +3879,7 @@ util@0.10.3:
   dependencies:
     inherits "2.0.1"
 
-util@~0.10.1:
+util@^0.10.3, util@~0.10.1:
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/util/-/util-0.10.4.tgz#3aa0125bfe668a4672de58857d3ace27ecb76901"
   dependencies:

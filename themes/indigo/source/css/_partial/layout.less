@@ -208,6 +208,7 @@ a[title="站长统计"] {
     }
 
     #menu {
+        width: 220px;
         z-index: 99;
         box-shadow: none;
         .transform(translateX(-100%));
@@ -253,5 +254,17 @@ a[title="站长统计"] {
 
     ::-webkit-scrollbar {
         display: none;
+    }
+}
+
+.mobile{
+    #live2d-widget{
+        opacity: 0;
+    }
+    &.lock{
+        #live2d-widget{
+            opacity: 1;
+            transition: opacity .2s;
+        }
     }
 }
