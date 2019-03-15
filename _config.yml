@@ -90,20 +90,22 @@ admin:
 
 # Security  加密文章
 ##
+# <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+# <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+# <div class="input-group-btn"> 
+#   <button type="button" class="btn btn-default" onclick="decryptAES()">解密</button> 
+# </div> 
 encrypt:
     enable: true
-    default_abstract: the content has been encrypted, enter the password to read.</br>
-    default_message: Please enter the password to read.
+    default_abstract: 文章需要密码才能查看全文！</br>
+    default_message: 联系博主的话也许能提示密码！
     default_template:
                     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-                    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-                    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
                     <div id="security">
-                      <div class="input-group"> 
-                        <input type="text" class="form-control" aria-label="Enter the password." id="pass">
-                        <div class="input-group-btn"> 
-                          <button type="button" class="btn btn-default" onclick="decryptAES()">解密</button> 
-                        </div> 
+                      <div class="input-container"> 
+                        <input type="password" class="form-control" aria-label="请输入文章密码" id="pass">
+                        <label for="pass">请输入文章密码<label>
+                        <div class="bottom-line" style=""></div>
                       </div> 
                     </div> 
                     <div id="encrypt-blog" style="display:none">
