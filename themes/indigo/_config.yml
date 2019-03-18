@@ -30,7 +30,7 @@ menu:
   link:
     text: 测试
     url: /custom
-  user-astronaut:
+  fire:
     text: 关于
     url: /about
 
@@ -152,9 +152,10 @@ since_year: 2018
 about: will be well
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
+#站点总访客数： 站点总访问量
 visit_counter:
-  site_uv: 站点总访客数：
-  site_pv: 站点总访问量：
+  site_uv: UV：
+  site_pv: PV：
 
 # 动态定义title
 title_change:
@@ -170,3 +171,6 @@ lightbox: true
 
 # icp备案号  ICP_license: 京ICP备1234556号-1
 ICP_license: false
+
+# 是否开启字数统计
+word_count: true

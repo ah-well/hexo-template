@@ -104,7 +104,7 @@ encrypt:
                     <div id="security">
                       <div class="input-container"> 
                         <input type="password" class="form-control" aria-label="请输入文章密码" id="pass">
-                        <label for="pass">请输入文章密码<label>
+                        <label for="pass">请输入文章密码</label>
                         <div class="bottom-line" style=""></div>
                       </div> 
                     </div> 
