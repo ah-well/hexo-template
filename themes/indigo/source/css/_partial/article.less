@@ -576,11 +576,11 @@
         &:focus{
             border-bottom-color: #fff;
         }
-        // &:not(:placeholder-shown) ~ div,
+        &:not(:placeholder-shown) ~ div,
         &:focus ~ div{
             width: 100%;
         }
-        // &:not(:placeholder-shown) + label,
+        &:not(:placeholder-shown) + label,
         &:focus + label {
             color: #52616c;
             -webkit-transform: translate(10px) scale(0.9);
@@ -609,73 +609,3 @@
         transition: all 0.3s;
     }
 }
-
-// #security{
-//     .input-container {
-//         width: 80%;
-//         max-width: 800px;
-//         position: relative;
-//         display: -webkit-box;
-//         display: -ms-flexbox;
-//         display: flex;
-//         -webkit-box-orient: vertical;
-//         -webkit-box-direction: reverse;
-//         -ms-flex-flow: column-reverse;
-//         flex-flow: column-reverse;
-//         -webkit-box-align: start;
-//         -ms-flex-align: start;
-//         align-items: flex-start;
-//         margin: 100px auto;
-        
-//         input {
-//             -webkit-box-ordinal-group: 11;
-//             order: 10;
-//             -ms-flex-order: 10;
-//             outline: none;
-//             border: none;
-//             width: 100%;
-//             padding: 15px 0;
-//             font-size: 20px;
-//             border-bottom: 1px solid #d5d5d5;
-//             text-indent: 10px;
-//             &::-webkit-input-placeholder {
-//                 opacity: 0;
-//             }
-
-//             & + label {
-//                 .transition(all, 0.3s);
-//             }
-//             &:focus {
-//                 border-bottom-color: #fff;
-//             }
-//             &:focus ~ div, &:not(:placeholder-shown) ~ div {
-//                 width: 100%;
-//             }
-//             &:focus + label, &:not(:placeholder-shown) + label {
-//                 color: #52616c;
-//                 -webkit-transform: translate(10px) scale(0.9);
-//                 transform: translate(10px) scale(0.9);
-//             }
-//         }
-//         label {
-//             -webkit-box-ordinal-group: 101;
-//             -ms-flex-order: 100;
-//             font-size: 18px;
-//             order: 100;
-//             color: #3f4f5b;
-//             -webkit-transform-origin: left bottom;
-//             transform-origin: left bottom;
-//             -webkit-transform: translate(10px, 40px);
-//             transform: translate(0px, 40px); 
-//         }
-
-//         .bottom-line {
-//             order: 2;
-//             width: 0;
-//             height: 2px;
-//             background: #658db5;
-//             transition: all 0.3s;
-//         }
-        
-//     }
-// }

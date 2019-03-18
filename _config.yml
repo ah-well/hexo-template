@@ -79,8 +79,11 @@ theme: indigo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/ah-well/ah-well.github.io
-  branch: master
+  # repository: https://github.com/ah-well/ah-well.github.io
+  # branch: master
+  repo:
+    github: https://github.com/ah-well/ah-well.github.io,master
+    coding: https://git.coding.net/Ah-Well/ah-well.git,master
 
 # hexo-admin authentification 可视化后台管理
 admin:
