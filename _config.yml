@@ -84,6 +84,7 @@ deploy:
   repo:
     github: https://github.com/ah-well/ah-well.github.io,master
     coding: https://git.coding.net/Ah-Well/ah-well.git,master
+    gitee: https://gitee.com/ah-well/ah-well.git,master
 
 # hexo-admin authentification 可视化后台管理
 admin:
@@ -98,6 +99,9 @@ admin:
 # <div class="input-group-btn"> 
 #   <button type="button" class="btn btn-default" onclick="decryptAES()">解密</button> 
 # </div> 
+
+# <div class="bottom-line" style=""></div>
+
 encrypt:
     enable: true
     default_abstract: 文章需要密码才能查看全文！</br>
@@ -106,14 +110,14 @@ encrypt:
                     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
                     <div id="security">
                       <div class="input-container"> 
-                        <input type="password" class="form-control" aria-label="请输入文章密码" id="pass">
-                        <label for="pass">请输入文章密码</label>
-                        <div class="bottom-line" style=""></div>
+                        <input type="password" class="form-control" id="pass" placeholder="回车确认">
+                        <label for="pass">请输入访问密码</label>
                       </div> 
                     </div> 
                     <div id="encrypt-blog" style="display:none">
                         {{content}}
                     </div>
+
 
 # live2d
 live2d:
