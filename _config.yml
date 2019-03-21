@@ -104,8 +104,8 @@ admin:
 
 encrypt:
     enable: true
-    default_abstract: 文章需要密码才能查看全文！</br>
-    default_message: 联系博主的话也许能提示密码！
+    default_abstract: PS：文章需要密码才能查看全文！</br>
+    default_message: 文章需要访问密码！
     default_template:
                     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
                     <div id="security">
