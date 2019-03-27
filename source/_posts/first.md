@@ -1,7 +1,7 @@
 ---
 title: first article
 date: 2018-07-10 14:26:06
-tags: [hello,hexo,first]
+tags: [hello]
 # password: 111
 # abstract: 11111111111111111
 # message: 22222222222222222

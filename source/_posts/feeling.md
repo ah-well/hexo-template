@@ -1,6 +1,6 @@
 title: bad feelings
 date: 2018-07-10 15:18:27
-tags: [回忆,毒鸡汤]
+tags: [回忆]
 categories: 负能量
 description: 文章列表描述
 

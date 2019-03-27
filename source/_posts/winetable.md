@@ -1,8 +1,9 @@
 ---
-title: Hello World
+title: 记一次工作之余的体会
 date: 2018-08-10 00:48:53
-tags: [酒桌,领导,同事,场合]
+tags: [酒桌场合]
 categories: [code,blog]
+password: kingubo
 ---
 
 ### 我眼中的酒桌文化（职场小记）

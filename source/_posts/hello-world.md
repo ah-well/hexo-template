@@ -4,7 +4,7 @@ date: 2018-07-10 15:36:53
 tags: 
     - hello
     - js
-categories: [code,blog]
+categories: [碎碎念]
 ---
 
 <!-- more -->
