@@ -82,9 +82,9 @@ deploy:
   # repository: https://github.com/ah-well/ah-well.github.io
   # branch: master
   repo:
+    gitee: https://gitee.com/ah-well/ah-well.git,master
     github: https://github.com/ah-well/ah-well.github.io,master
     coding: https://git.coding.net/Ah-Well/ah-well.git,master
-    gitee: https://gitee.com/ah-well/ah-well.git,master
 
 # hexo-admin authentification 可视化后台管理
 admin:

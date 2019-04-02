@@ -8,4 +8,5 @@ tags: [learn,English,Japanese]
 
   - from zero to hero
   - underdog  弱旅（实力比较弱的队伍，俗称下狗）
+  - 功不唐捐 佛家语，指功夫不会白白地抛弃。"唐"意为“白白的，徒然的”。
   - 
