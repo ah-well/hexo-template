@@ -4,7 +4,7 @@ date: 2019-04-02 14:30:43
 tags: js
 ---
 
-## js 变量
+## js 变量（大小写敏感）
 ### 分类
 - Number（数字）
 - String（字符串）
@@ -58,7 +58,7 @@ i = 10; // i现在是全局变量
    ```
   - xiaohong的属性名middle-school不是一个有效的变量，就需要用''括起来。访问这个属性也无法使用.操作符，必须用['xxx']来访问：
 - 如果访问一个不存在的属性会返回什么呢？JavaScript规定，访问不存在的属性不报错，而是返回undefined：
-- 由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：
+- 由于JavaScript的对象是动态类型(这意味着相同的变量可用作不同的类型)，你可以自由地给一个对象添加或删除属性：
 - 如果我们要检测xiaoming是否拥有某一属性，可以用in操作符, 不过要小心，如果in判断一个属性存在，这个属性不一定是xiaoming的，它可能是xiaoming继承得到的：
   ```js
   var xiaoming = {
@@ -79,10 +79,13 @@ i = 10; // i现在是全局变量
   };
   xiaoming.hasOwnProperty('name'); // true
   xiaoming.hasOwnProperty('toString'); // false
-  ```
-- 因为toString定义在object对象中，而所有对象最终都会在原型链上指向object，所以xiaoming也拥有toString属性。
 
-要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法：
+  // 声明空对象的两种方法
+  var obj = new Object();
+  var obj = {};
+  ```
+- 因为toString定义在object对象中，而所有对象最终都会在原型链上指向object，所以xiaoming也拥有toString属性。要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法
+- 
   
 ### 声明变量关键字 let const var
 - let 语句声明一个块级作用域的本地变量，并且可选的将其初始化为一个值。
@@ -90,3 +93,32 @@ i = 10; // i现在是全局变量
 - var 是最常见的声明变量的关键字。它没有其他两个关键字的种种限制。这是因为它是传统上在 JavaScript 声明变量的唯一方法。使用 var 声明的变量在它所声明的整个函数都是可见的。
 
 > JavaScript 与其他语言的（如 Java）的重要区别是在 JavaScript 中语句块（blocks）是没有作用域的，只有函数有作用域。因此如果在一个复合语句中（如 if 控制结构中）使用 var 声明一个变量，那么它的作用域是整个函数（复合语句在函数中）。 但是从 ECMAScript Edition 6 开始将有所不同的， let 和 const 关键字允许你创建块作用域的变量。
+
+### 声明变量类型
+- 用new来声明。JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。
+
+### 数组
+- Array.length 并不总是等于数组中元素的个数
+  ```js
+  var a = ["dog", "cat", "hen"];
+  a[100] = "fox";
+  a.length; // 101
+  ```
+
+## 控制结构
+### 循环
+- for
+- for...of循环，ES2015 引入了更加简洁的，可以用它来遍历可迭代对象，例如数组：
+  ```js
+  for (const currentValue of a) {
+    // Do something with currentValue
+  }
+  ```
+- for...in  注意，如果有人向 Array.prototype 添加了新的属性，使用这样的循环这些属性也同样会被遍历。所以并不推荐使用这种方法遍历数组：
+- forEach()
+- while
+- do...while
+  
+> do...while循环体会至少执行1次，而for和while循环则可能一次都不执行。
+---
+P.S.本文部分内容参考了 [廖雪峰博客](https://www.liaoxuefeng.com) 、 [MDN Web docs](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
