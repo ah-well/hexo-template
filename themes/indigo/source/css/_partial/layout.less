@@ -256,15 +256,27 @@ a[title="站长统计"] {
         display: none;
     }
 }
-
+#live2d-widget{
+    #live2dcanvas{
+        opacity: 1!important;
+        left: 50px;
+    }
+}
 .mobile{
     #live2d-widget{
-        opacity: 0;
+        #live2dcanvas{
+            opacity: 0;
+            transform: translateX(-160px);
+        }
     }
     &.lock{
         #live2d-widget{
-            opacity: 1;
-            transition: opacity .2s;
+            #live2dcanvas{
+                opacity: 1;
+                transform: translateX(0px);
+                transition: all .3s;
+            }
+            
         }
     }
 }
