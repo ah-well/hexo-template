@@ -13,3 +13,7 @@ hexo d
 hexo g && hexo -w && hexo s
 
 hexo clean && hexo g && hexo -d
+
+- 添加interview.md
+- 添加其他.md
+- 设置github不提交 _post 文件夹
