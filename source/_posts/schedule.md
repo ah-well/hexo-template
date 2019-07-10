@@ -9,7 +9,8 @@ password: well
 ---
 #### 阅读
 - [ ] [《网络是怎么连接的》](https://book.douban.com/subject/26941639/)
-- [ ] [《深入理解计算机系统》](https://img3.doubanio.com/view/subject/l/public/s1470003.jpg)
+- [ ] [《深入理解计算机系统》](https://book.douban.com/subject/1230413/)
+- [ ] [《深入理解计算机系统》](https://book.douban.com/subject/1230413/)
 
 #### 待办事项
 
