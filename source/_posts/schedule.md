@@ -8,7 +8,8 @@ password: well
 # message: 如果想继续查看文章，可联系博主取得密码，给不给就看我心情了→_→。
 ---
 #### 阅读
-- [ ] [《网络是怎么连接的》] (https://book.douban.com/subject/26941639/)
+- [ ] [《网络是怎么连接的》](https://book.douban.com/subject/26941639/)
+- [ ] [《深入理解计算机系统》](https://img3.doubanio.com/view/subject/l/public/s1470003.jpg)
 
 #### 待办事项
 
