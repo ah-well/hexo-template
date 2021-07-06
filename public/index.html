@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     
 
     
@@ -25,16 +25,15 @@
     
     <meta name="keywords" content="blog well">
     <meta name="description" content="to be continue">
-<meta name="keywords" content="blog well">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Well&#39;s Blog">
 <meta property="og:url" content="http://ah-well.github.io/index.html">
 <meta property="og:site_name" content="Well&#39;s Blog">
 <meta property="og:description" content="to be continue">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Well Lee">
+<meta property="article:tag" content="blog well">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Well&#39;s Blog">
-<meta name="twitter:description" content="to be continue">
     
         <link rel="alternate" type="application/atom+xml" title="Well&#39;s Blog" href="/atom.xml">
     
@@ -76,7 +75,7 @@
     </script>
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body>
     <div id="loading" class="active"></div>
@@ -335,6 +334,7 @@ call(), apply(), bind()
     
         
 前端安全、性能问题
+
 XSS 跨站脚本攻击(Cross Site Scripting)，为了不和层叠样式表(Cascading Style Sheets, CSS)的缩写混淆，故将跨站脚本攻击缩写为XSS。恶意攻击者往Web页面里插入恶意的Script代码，当用户浏览该页之时，嵌入其中Web里面的Script代码会被执行，从而达到恶意攻击用户的目的。
 CSRF
 
@@ -342,7 +342,6 @@ CSRF
 重绘、重排
 
 性能影响
-
 ...
     
 
@@ -433,10 +432,12 @@ webpack是一个模块打包器，强调的是一个前端模块化方案，更�
     
         vue试题
 vue视图不会更新
+
 data里边设置 $set
 
 
 nextTick()
+
 在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中
 
 
@@ -445,7 +446,7 @@ vue路由导航钩子（）
 全局导航钩子：分为前置守卫、后置钩子
 
 前置守卫：router.beforeEach
-1234const router = new VueRouter(&#123; ...
+1234const router = new VueRouter(&#123...
     
 
         <a href="/2019/05/14/inter-vue/" class="post-more waves-effect waves-button">
@@ -614,10 +615,9 @@ linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集�
 
     
         
-函数式编程
-1['2', '3', '4'].map(parseInt) // [2, NaN, NaN]
+函数式编程1[&#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;].map(parseInt) // [2, NaN, NaN]
 
-因为 map 的算子是有两个参数的，第一个参数是被迭代数组的元素，第二个参数是该元素的下标。所以 [‘2’, ‘3’, ‘4’].map(parseInt) 实际上相当于执行了 [parseInt(‘2’, 0), parseInt(‘3’, 1), parseInt(‘4’, 2...
+因为 map 的算子是有两个参数的，第一个参数是被迭代数组的元素，第二个参数是该元素的下标。所以 [‘2’, ‘3’, ‘4’].map(parseInt) 实际上相当于执行了 [parseInt(‘2’, 0), pars...
     
 
         <a href="/2019/04/04/code/" class="post-more waves-effect waves-button">
@@ -627,7 +627,7 @@ linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集�
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/题目/">题目</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E7%9B%AE/" rel="tag">题目</a></li></ul>
 
     </div>
     
@@ -664,7 +664,7 @@ linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集�
     
         
 在JavaScript的世界里万物皆对象
-123456789typeof 123; // 'number'typeof NaN; // 'number'typeof 'str'; // 'string'typeof true; // 'boolean'typeof undefined; // 'undefined'typeof Math.abs; // 'function'typeof n...
+123456789typeof 123; // &#x27;number&#x27;typeof NaN; // &#x27;number&#x27;typeof &#x27;str&#x27;; // &#x27;string&#x27;typeof true; // &#x27;boolean&#x27;typeof undefined; //...
     
 
         <a href="/2019/04/04/JSObject/" class="post-more waves-effect waves-button">
@@ -736,7 +736,7 @@ linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集�
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">

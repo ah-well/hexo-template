@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     
 
     
@@ -23,19 +23,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     
-    <meta name="keywords" content>
-    <meta name="description" content="vue试题 vue视图不会更新 data里边设置 $set   nextTick() 在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中   vue路由导航钩子（）  全局导航钩子：分为前置守卫、后置钩子  前置守卫：router.beforeEach 1234const router = new VueRouter(&amp;#123; ...">
-<meta name="keywords" content="blog well">
+    <meta name="keywords" content="">
+    <meta name="description" content="vue试题 vue视图不会更新  data里边设置 $set   nextTick()  在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中   vue路由导航钩子（）  全局导航钩子：分为前置守卫、后置钩子  前置守卫：router.beforeEach 1234const router &#x3D; new VueRouter(&amp;#123; .">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue试题">
 <meta property="og:url" content="http://ah-well.github.io/2019/05/14/inter-vue/index.html">
 <meta property="og:site_name" content="Well&#39;s Blog">
-<meta property="og:description" content="vue试题 vue视图不会更新 data里边设置 $set   nextTick() 在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中   vue路由导航钩子（）  全局导航钩子：分为前置守卫、后置钩子  前置守卫：router.beforeEach 1234const router = new VueRouter(&amp;#123; ...">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-07-05T03:14:59.280Z">
+<meta property="og:description" content="vue试题 vue视图不会更新  data里边设置 $set   nextTick()  在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中   vue路由导航钩子（）  全局导航钩子：分为前置守卫、后置钩子  前置守卫：router.beforeEach 1234const router &#x3D; new VueRouter(&amp;#123; .">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-05-14T15:16:33.000Z">
+<meta property="article:modified_time" content="2021-07-05T03:14:59.280Z">
+<meta property="article:author" content="Well Lee">
+<meta property="article:tag" content="blog well">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue试题">
-<meta name="twitter:description" content="vue试题 vue视图不会更新 data里边设置 $set   nextTick() 在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中   vue路由导航钩子（）  全局导航钩子：分为前置守卫、后置钩子  前置守卫：router.beforeEach 1234const router = new VueRouter(&amp;#123; ...">
     
         <link rel="alternate" type="application/atom+xml" title="Well&#39;s Blog" href="/atom.xml">
     
@@ -77,7 +77,7 @@
     </script>
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body>
     <div id="loading" class="active"></div>
@@ -258,11 +258,13 @@
         
         <div class="post-content" id="post-content" itemprop="postContent">
             <h3 id="vue试题"><a href="#vue试题" class="headerlink" title="vue试题"></a>vue试题</h3><ul>
-<li>vue视图不会更新<ul>
+<li><p>vue视图不会更新</p>
+<ul>
 <li>data里边设置 $set</li>
 </ul>
 </li>
-<li>nextTick()<ul>
+<li><p>nextTick()</p>
+<ul>
 <li>在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中</li>
 </ul>
 </li>
@@ -272,21 +274,23 @@
 <ol>
 <li><p>前置守卫：router.beforeEach</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123; ... &#125;);</span><br><span class="line">router.beforeEach(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// do someting</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>next 方法必须要调用，否则钩子函数无法 resolved</p>
 </blockquote>
-<ol>
-<li>to: Route，代表要进入的目标，它是一个路由对象</li>
-<li>from: Route，代表当前正要离开的路由，同样也是一个路由对象</li>
-<li>next: Function，这是一个必须需要调用的方法，而具体的执行效果则依赖 next 方法调用的参数<br>next()：进入管道中的下一个钩子，如果全部的钩子执行完了，则导航的状态就是 confirmed（确认的）<br>next(false)：这代表中断掉当前的导航，即 to 代表的路由对象不会进入，被中断，此时该表 URL 地址会被重置到 from 路由对应的地址<br>next(‘/‘) 和 next({path: ‘/‘})：在中断掉当前导航的同时，跳转到一个不同的地址<br>next(error)：如果传入参数是一个 Error 实例，那么导航被终止的同时会将错误传递给 router.onError() 注册过的回调</li>
-</ol>
+</li>
+<li><p>to: Route，代表要进入的目标，它是一个路由对象</p>
+</li>
+<li><p>from: Route，代表当前正要离开的路由，同样也是一个路由对象</p>
+</li>
+<li><p>next: Function，这是一个必须需要调用的方法，而具体的执行效果则依赖 next 方法调用的参数<br> next()：进入管道中的下一个钩子，如果全部的钩子执行完了，则导航的状态就是 confirmed（确认的）<br> next(false)：这代表中断掉当前的导航，即 to 代表的路由对象不会进入，被中断，此时该表 URL 地址会被重置到 from 路由对应的地址<br> next(‘/‘) 和 next({path: ‘/‘})：在中断掉当前导航的同时，跳转到一个不同的地址<br> next(error)：如果传入参数是一个 Error 实例，那么导航被终止的同时会将错误传递给 router.onError() 注册过的回调</p>
 </li>
 <li><p>后置钩子：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">router.afterEach(<span class="function">(<span class="params">to, <span class="keyword">from</span></span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// do someting</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&gt; 不同于前置守卫，后置钩子并没有 next 函数，也不会改变导航本身</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>路由独享的钩子：单个路由独享的导航钩子，它是在路由配置上直接进行定义的</p>
-</li>
 </ol>
+</li>
+<li><p>路由独享的钩子：单个路由独享的导航钩子，它是在路由配置上直接进行定义的</p>
 </li>
 </ol>
 </li>
@@ -520,7 +524,7 @@
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">

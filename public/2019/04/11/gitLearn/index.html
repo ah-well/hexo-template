@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     
 
     
@@ -23,20 +23,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     
-    <meta name="keywords" content>
+    <meta name="keywords" content="">
     <meta name="description" content="什么是Git linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集中式的版本控制系统，但速度慢，且需联网，另有一些系统比这两者好用，不过需要付费，与Linux的开源精神不符，如BitKeeper。也正是它的东家BitMover公司因为开发Samba的Andrew试图破解BitKeeper的协议（据说不止他一个），要收回Linux社区的免费使用权，才迫使Linus在两周之内自己动手用">
-<meta name="keywords" content="blog well">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitLearn">
 <meta property="og:url" content="http://ah-well.github.io/2019/04/11/gitLearn/index.html">
 <meta property="og:site_name" content="Well&#39;s Blog">
 <meta property="og:description" content="什么是Git linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集中式的版本控制系统，但速度慢，且需联网，另有一些系统比这两者好用，不过需要付费，与Linux的开源精神不符，如BitKeeper。也正是它的东家BitMover公司因为开发Samba的Andrew试图破解BitKeeper的协议（据说不止他一个），要收回Linux社区的免费使用权，才迫使Linus在两周之内自己动手用">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://7n.w3cschool.cn/attachments/day_160929/201609291518243574.png">
-<meta property="og:updated_time" content="2021-07-05T03:14:59.277Z">
+<meta property="article:published_time" content="2019-04-11T07:56:23.000Z">
+<meta property="article:modified_time" content="2021-07-05T03:14:59.277Z">
+<meta property="article:author" content="Well Lee">
+<meta property="article:tag" content="blog well">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GitLearn">
-<meta name="twitter:description" content="什么是Git linus用C语言写的分布式版本控制系统。前者有CVS、SVN这些集中式的版本控制系统，但速度慢，且需联网，另有一些系统比这两者好用，不过需要付费，与Linux的开源精神不符，如BitKeeper。也正是它的东家BitMover公司因为开发Samba的Andrew试图破解BitKeeper的协议（据说不止他一个），要收回Linux社区的免费使用权，才迫使Linus在两周之内自己动手用">
 <meta name="twitter:image" content="https://7n.w3cschool.cn/attachments/day_160929/201609291518243574.png">
     
         <link rel="alternate" type="application/atom+xml" title="Well&#39;s Blog" href="/atom.xml">
@@ -79,7 +79,7 @@
     </script>
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 <body>
     <div id="loading" class="active"></div>
@@ -264,8 +264,10 @@
 </blockquote>
 <hr>
 <h2 id="集中式vs分布式"><a href="#集中式vs分布式" class="headerlink" title="集中式vs分布式"></a>集中式vs分布式</h2><ul>
-<li>集中式和分布式，一个版本对应多个版本</li>
-<li>集中式必须联网才能工作，无网络状态下无法回退到之前的某个版本</li>
+<li><p> 集中式和分布式，一个版本对应多个版本</p>
+</li>
+<li><p> 集中式必须联网才能工作，无网络状态下无法回退到之前的某个版本</p>
+</li>
 <li><p>Git速度快、灵活，任意两个开发者之间可以很容易的解决冲突。</p>
 <ul>
 <li>Git代码保密性差，一旦开发者把整个库克隆下来就可以完全公开所有代码和版本信息。学习周期长</li>
@@ -279,17 +281,23 @@
 <li>版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。</li>
 </ul>
 <h3 id="Git工作流"><a href="#Git工作流" class="headerlink" title="Git工作流"></a>Git工作流</h3><ul>
-<li>克隆 Git 资源作为工作目录。</li>
-<li>在克隆的资源上添加或修改文件。</li>
-<li>如果其他人修改了，你可以更新资源。</li>
-<li>在提交前查看修改。</li>
-<li>提交修改。</li>
+<li><p>克隆 Git 资源作为工作目录。</p>
+</li>
+<li><p>在克隆的资源上添加或修改文件。</p>
+</li>
+<li><p>如果其他人修改了，你可以更新资源。</p>
+</li>
+<li><p>在提交前查看修改。</p>
+</li>
+<li><p>提交修改。</p>
+</li>
 <li><p>在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。</p>
 <p><img src="https://7n.w3cschool.cn/attachments/day_160929/201609291518243574.png" alt="工作流"></p>
 </li>
 </ul>
-<h3 id="git创建仓库"><a href="#git创建仓库" class="headerlink" title="git创建仓库"></a>git创建仓库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">git init                    在当前目录下创建Git仓库</span><br><span class="line">git init newrepo            使用指定目录作为Git仓库</span><br><span class="line">git add                     命令可将该文件添加到缓存</span><br><span class="line"></span><br><span class="line">git status                  命令用于查看项目的当前状态</span><br><span class="line">git status -s               简短的结果输出。如果没加该参数会详细输出内容</span><br><span class="line">git diff                    显示已写入缓存与已修改但尚未写入缓存的改动的区别</span><br><span class="line">  git diff --cached         查看已缓存的改动</span><br><span class="line">  git diff HEAD             查看已缓存的与未缓存的所有改动</span><br><span class="line">  git diff --stat           显示摘要而非整个diff</span><br><span class="line"></span><br><span class="line">git commit                  记录缓存区的快照</span><br><span class="line">  git commit -m             记录缓存提供提交注释</span><br><span class="line">  git commit -a             跳过git add 提交缓存的流程</span><br><span class="line"></span><br><span class="line">git reset HEAD              取消缓存已缓存的内容</span><br><span class="line">  git reset HEAD -- [文件名] </span><br><span class="line">git rm                      将文件从缓存区中移除，默认情况下，会将文件从缓存区和你的硬盘中（工作目录）删除      </span><br><span class="line">  git rm --cached           在工作目录中留着该文件，仅删除缓存区的文件</span><br><span class="line">  git mv                    相当于git rm --cached 有点多余</span><br><span class="line"></span><br><span class="line">// 初始化后，在当前目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。</span><br><span class="line">// 如果当前目录下有几个文件想要纳入版本控制，需要先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交：</span><br><span class="line">git add *.c         </span><br><span class="line">git add README</span><br><span class="line">git commit -m &apos;initial project version&apos;</span><br><span class="line"></span><br><span class="line">// 从现有仓库克隆，如果要自己定义要新建的项目目录名称，可以在上面的命令末尾指定新的名字：</span><br><span class="line">git clone [url]</span><br></pre></td></tr></table></figure>
-<h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch (branchname)           创建分支</span><br><span class="line">git checkout (branchname)         切换分支</span><br><span class="line">git merge                         合并分支</span><br><span class="line"></span><br><span class="line">git branch                        列出分支</span><br></pre></td></tr></table></figure>
+<h3 id="git创建仓库"><a href="#git创建仓库" class="headerlink" title="git创建仓库"></a>git创建仓库</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">git init                    在当前目录下创建Git仓库</span><br><span class="line">git init newrepo            使用指定目录作为Git仓库</span><br><span class="line">git add                     命令可将该文件添加到缓存</span><br><span class="line"></span><br><span class="line">git status                  命令用于查看项目的当前状态</span><br><span class="line">git status -s               简短的结果输出。如果没加该参数会详细输出内容</span><br><span class="line">git diff                    显示已写入缓存与已修改但尚未写入缓存的改动的区别</span><br><span class="line">  git diff --cached         查看已缓存的改动</span><br><span class="line">  git diff HEAD             查看已缓存的与未缓存的所有改动</span><br><span class="line">  git diff --stat           显示摘要而非整个diff</span><br><span class="line"></span><br><span class="line">git commit                  记录缓存区的快照</span><br><span class="line">  git commit -m             记录缓存提供提交注释</span><br><span class="line">  git commit -a             跳过git add 提交缓存的流程</span><br><span class="line"></span><br><span class="line">git reset HEAD              取消缓存已缓存的内容</span><br><span class="line">  git reset HEAD -- [文件名] </span><br><span class="line">git rm                      将文件从缓存区中移除，默认情况下，会将文件从缓存区和你的硬盘中（工作目录）删除      </span><br><span class="line">  git rm --cached           在工作目录中留着该文件，仅删除缓存区的文件</span><br><span class="line">  git mv                    相当于git rm --cached 有点多余</span><br><span class="line"></span><br><span class="line">// 初始化后，在当前目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。</span><br><span class="line">// 如果当前目录下有几个文件想要纳入版本控制，需要先用 git add 命令告诉 Git 开始对这些文件进行跟踪，然后提交：</span><br><span class="line">git add *.c         </span><br><span class="line">git add README</span><br><span class="line">git commit -m &#x27;initial project version&#x27;</span><br><span class="line"></span><br><span class="line">// 从现有仓库克隆，如果要自己定义要新建的项目目录名称，可以在上面的命令末尾指定新的名字：</span><br><span class="line">git clone [url]       </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git branch (branchname)           创建分支</span><br><span class="line">git checkout (branchname)         切换分支</span><br><span class="line">git merge                         合并分支</span><br><span class="line"></span><br><span class="line">git branch                        列出分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
         </div>
 
         <blockquote class="post-copyright">
@@ -516,7 +524,7 @@
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">
